@@ -328,8 +328,8 @@ $response.result | Where-Object running_state -eq "running" | Format-Table inst_
  
 Param(
     [Parameter(Mandatory=$true)]
-    [String[]]        #Additional [] after string denotes this parameter accespts multiple inputs
-    $ComputerName     #Note this is same as the variable used in your code below
+    [String[]]  $ComputerName    #Additional [] after string denotes this parameter accespts multiple inputs
+         #Note this is same as the variable used in your code below
 )
  
 foreach ($target in $ComputerName) {
